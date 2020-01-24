@@ -5,6 +5,11 @@
     <UserSecretsId>aspnet-Colonize.Website-5C98029D-74F5-497A-B0F0-77A48F1BCBA6</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200124100422_AddVoyagesShipAndDestination.cs" />
+    <Compile Remove="Data\Migrations\20200124100422_AddVoyagesShipAndDestination.Designer.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.1" />

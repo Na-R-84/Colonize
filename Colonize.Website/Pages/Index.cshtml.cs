@@ -1,6 +1,7 @@
 ﻿using Colonize.Website.Data.Entities;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 
 namespace Colonize.Website.Pages
@@ -10,11 +11,14 @@ namespace Colonize.Website.Pages
         private readonly ILogger<IndexModel> _logger;
 
         public IList<Voyage> VoyageList = new List<Voyage>();
+
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
         }
 
+        // HTTP GET /
+        // HTTP GET /index
         public void OnGet()
         {
 
